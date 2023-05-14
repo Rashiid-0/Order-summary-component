@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.text-container {
+  padding: 7%;
+  text-align: center;
+}
+.text-container .title {
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 10px;
+  color: hsl(223, 47%, 23%);
+}
+.text-container .sub-title {
+  color: hsl(224, 23%, 55%);
+  line-height: 25px;
+  font-size: 16px;
+  padding: 15px;
+}
+.plan-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+.plan-box .img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.img-text div {
+  text-align: left;
+}
+.img-text div h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.img-text div p {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.plan-box a.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+a.change:hover {
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+}
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+a.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+a.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
